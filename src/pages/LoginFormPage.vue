@@ -46,6 +46,7 @@ import { useQuasar, Cookies } from 'quasar'
 import { useRouter } from 'vue-router'
 
 export default defineComponent({
+  name: 'LoginFormPage',
   methods: { requiredValidator },
 
   setup () {
