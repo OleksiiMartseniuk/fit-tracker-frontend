@@ -12,7 +12,7 @@
         />
 
         <q-toolbar-title>
-          Quasar App
+          FitTracker
         </q-toolbar-title>
 
         <div class="q-pa-md q-gutter-sm">
@@ -84,6 +84,12 @@ import EssentialLink from 'components/EssentialLink.vue'
 import { useRouter } from 'vue-router'
 
 const linksList = [
+  {
+    title: 'Home',
+    caption: 'home',
+    icon: 'home',
+    link: 'home'
+  },
   {
     title: 'Workout',
     caption: 'workout',

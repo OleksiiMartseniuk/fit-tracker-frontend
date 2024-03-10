@@ -35,7 +35,7 @@ export default defineComponent({
 
     link: {
       type: String,
-      default: '/'
+      default: 'home'
     },
 
     icon: {
