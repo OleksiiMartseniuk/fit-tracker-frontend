@@ -29,7 +29,6 @@ export default boot(({ app, router }) => {
   api.interceptors.response.use(
     (response) => response,
     (error) => {
-      console.log(process.env)
       if (error.response.status === 401) {
         Cookies.remove('token')
         Cookies.remove('userData')

@@ -64,8 +64,10 @@ export default defineComponent({
           api.defaults.headers.common.Authorization = 'Bearer ' + response.data.access_token
           Cookies.set('token', response.data.access_token)
           setUserData()
-          $q.loading.hide()
-          router.replace('/')
+          setTimeout(() => {
+            $q.loading.hide()
+            router.replace('/')
+          }, 2000)
         })
         .catch((response) => {
           $q.loading.hide()
