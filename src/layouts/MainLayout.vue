@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
+  <q-layout view="hHh lpR fFf">
     <q-header elevated>
       <q-toolbar>
         <q-btn
@@ -24,20 +24,7 @@
                   <q-item-section>{{ userData?.username }}</q-item-section>
                 </q-item>
                 <q-separator />
-                <q-item clickable>
-                  <q-item-section>New incognito tab</q-item-section>
-                </q-item>
-                <q-item clickable>
-                  <q-item-section>Recent tabs</q-item-section>
-                </q-item>
-                <q-item clickable>
-                  <q-item-section>History</q-item-section>
-                </q-item>
-                <q-item clickable>
-                  <q-item-section>Downloads</q-item-section>
-                </q-item>
-                <q-separator />
-                <q-item clickable>
+                <q-item :to="{name: 'user-settings'}" clickable>
                   <q-item-section>Settings</q-item-section>
                 </q-item>
                 <q-separator />
